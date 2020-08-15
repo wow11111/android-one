@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reChargeActivity"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/recharge_title"
+        layout="@layout/recharge_layout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:id="@+id/tv_username"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@mipmap/user"
+        android:text="  用户名： admin"
+        android:textSize="20dp"
+        />
+<TextView
+    android:layout_width="300dp"
+    android:layout_height="30dp"
+    android:id="@+id/tv_RestMoney"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="30dp"
+    android:drawableLeft="@mipmap/recharge"
+    android:text="  剩余金额： 1000"
+    android:textSize="18dp"
+    />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_buy1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_order"
+            style="@style/muchTouch"
+            android:text="20元" />
+
+        <Button
+            android:id="@+id/btn_buy2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_order"
+            style="@style/muchTouch"
+            android:text="50元" />
+
+        <Button
+            android:id="@+id/btn_buy3"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_order"
+            style="@style/muchTouch"
+            android:text="100元" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_buy4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_order"
+            style="@style/muchTouch"
+            android:text="200元" />
+
+        <Button
+            android:id="@+id/btn_buy5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_order"
+            style="@style/muchTouch"
+            android:text="498元" />
+
+        <Button
+            android:id="@+id/btn_buy6"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_order"
+            style="@style/muchTouch"
+            android:text="598元" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_buy7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_order"
+            style="@style/muchTouch"
+            android:text="888元" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_bg"
+        android:hint="请输入充值金额(1~1000元)"
+        android:id="@+id/et_recharge"
+        android:inputType="number"
+
+        />
+    <Button
+        android:id="@+id/btn_reCharge"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:text="立即充值" />
+</LinearLayout>

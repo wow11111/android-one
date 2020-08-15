@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/iv_car_list_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/mycarbook" />
+
+    <TextView
+        android:layout_toRightOf="@+id/iv_car_list_icon"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:id="@+id/tv_car_list_code"
+        android:text="订单号：Fh12FS5F563"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_car_list_code"
+        android:id="@+id/tv_carnumber"
+        android:layout_toRightOf="@+id/iv_car_list_icon"
+        android:text="车位号：5"
+        android:textColor="#000"
+        />
+<TextView
+    android:layout_width="400dp"
+    android:layout_height="30dp"
+    android:id="@+id/tv_booktime"
+    android:layout_toRightOf="@+id/iv_car_list_icon"
+    android:layout_below="@id/tv_carnumber"
+    android:text="预定时间：06.00-12.00"
+    android:textColor="#000"
+    />
+    <TextView
+        android:id="@+id/tv_car_timecode"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_booktime"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/iv_car_list_icon"
+        android:text="订单时间：2020-6-1 11.00"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_recharge_list_money"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/tv_carnumber"
+        android:text="+10"
+        android:textColor="#BC1313"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

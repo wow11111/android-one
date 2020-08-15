@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tv_pager_title"
+                android:layout_width="0dp"
+                android:layout_height="35dip"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dip"
+                android:text="很长的标题。。。。。你懂我意思吧"
+                android:textColor="@color/white" />
+            <!--用来动态添加轮播小点-->
+            <LinearLayout
+                android:id="@+id/lineLayout_dot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/blank"
+        android:layout_marginTop="80dp">
+
+        <ImageButton
+            android:id="@+id/imgbtn_tobtooth"
+            android:layout_width="170dp"
+            android:layout_height="136dp"
+            android:layout_marginLeft="7dp"
+            android:background="@mipmap/bluelock"
+            />
+
+        <ImageButton
+            android:id="@+id/imgbtn_tobuy"
+            android:layout_width="170dp"
+            android:layout_height="136dp"
+            android:layout_marginLeft="7dp"
+            android:background="@mipmap/buy"/>
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imgbtn_tomap"
+        android:layout_width="346dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="7dp"
+        android:background="@mipmap/parkicon"
+        />
+</LinearLayout>
